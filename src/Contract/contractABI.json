@@ -1,0 +1,133 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_metadataUri",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_desp",
+				"type": "string"
+			}
+		],
+		"name": "addingPost",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "postId",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "creator",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "desp",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "metadataUri",
+				"type": "string"
+			}
+		],
+		"name": "PostAdded",
+		"type": "event"
+	},
+	{
+		"inputs": [],
+		"name": "getAllPosts",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "postId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "creator",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "desp",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "metadataUri",
+						"type": "string"
+					}
+				],
+				"internalType": "struct FavRapper.Post[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "id",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "idToPost",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "postId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "creator",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "desp",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "metadataUri",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

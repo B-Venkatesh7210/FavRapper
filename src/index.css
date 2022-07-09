@@ -11,3 +11,66 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.mainBg{
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  background-color: darkslateblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+}
+
+.mainBg::-webkit-scrollbar{
+  display: none;
+}
+
+.title{
+  font-family: Circular Spotify Tx T;
+  font-style: normal;
+  color: white;
+}
+
+.connectWallet{
+  position: absolute;
+  width: 15rem;
+  height: 4rem;
+  right: 4rem;
+  top: 6rem;
+  background: #010a06;
+  background: -webkit-linear-gradient(top left, #010a06, #413149);
+  background: -moz-linear-gradient(top left, #010a06, #413149);
+  background: linear-gradient(to bottom right, #010a06, #413149);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  outline: white 2px solid;
+}
+
+.textfield{
+  border: none;
+  outline: none;
+  background: #010a06;
+  background: -webkit-linear-gradient(top left, #010a06, #413149);
+  background: -moz-linear-gradient(top left, #010a06, #413149);
+  background: linear-gradient(to bottom right, #010a06, #413149);
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+  font-size: 14px;
+  outline: white 2px solid;
+}
+
+.random::-webkit-scrollbar{
+  display: none;
+}
+
+.container{
+  
+}
