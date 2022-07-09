@@ -167,10 +167,7 @@ function App() {
           ></input>
         </form>
       </div>
-      <div
-        className="random"
-        style={{width: "100%", overflow: "scroll"}}
-      >
+      <div className="random" style={{ width: "100%", overflow: "scroll" }}>
         <div
           style={{
             display: "flex",
@@ -189,18 +186,24 @@ function App() {
                 alignItems: "center",
                 height: "20rem",
                 width: "20rem",
-                margin: "0rem 2rem"
+                margin: "0rem 2rem",
               }}
             >
-              <img
-                src={allPost.metadataUri}
-                alt="rapper"
-                style={{ width: "10rem", height: "10rem" }}
-              ></img>
+              <a href={allPost.metadataUri} 
+              target="_blank">
+                <img
+                  src={allPost.metadataUri}
+                  alt="rapper"
+                  style={{ width: "10rem", height: "10rem" }}
+                ></img>
+              </a>
+
               <span className="title" style={{ fontSize: "15px" }}>
                 Creator: {getEllipsisTxt(allPost.creator, 6)}
               </span>
-              <span className="title" style={{ fontSize: "18px" }}>{allPost.desp}</span>
+              <span className="title" style={{ fontSize: "18px" }}>
+                {allPost.desp}
+              </span>
             </div>
           ))}
         </div>
