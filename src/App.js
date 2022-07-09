@@ -169,7 +169,7 @@ function App() {
       </div>
       <div
         className="random"
-        style={{ width: "100%", overflow: "scroll"}}
+        style={{width: "100%", overflow: "scroll"}}
       >
         <div
           style={{
@@ -198,7 +198,7 @@ function App() {
                 style={{ width: "10rem", height: "10rem" }}
               ></img>
               <span className="title" style={{ fontSize: "15px" }}>
-                Creator: {getEllipsisTxt(`$allPost.creator`, 6)}
+                Creator: {getEllipsisTxt(allPost.creator, 6)}
               </span>
               <span className="title" style={{ fontSize: "18px" }}>{allPost.desp}</span>
             </div>
